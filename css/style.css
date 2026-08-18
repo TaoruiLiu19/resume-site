@@ -382,6 +382,16 @@ body {
   align-items: center;
 }
 
+.hero-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 3px solid var(--accent-primary);
+  box-shadow: 0 0 24px rgba(0, 168, 255, 0.25);
+}
+
 .hero-kicker {
   font-family: var(--font-display);
   font-size: 0.875rem;
@@ -815,6 +825,10 @@ body {
 
   .hero-visual {
     order: -1;
+  }
+
+  .hero-avatar {
+    margin-inline: auto;
   }
 
   .hero-grid {
