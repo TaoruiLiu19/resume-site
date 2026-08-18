@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>刘焘瑞 · 算法与软件开发</title>
+  <meta name="description" content="刘焘瑞的个人简历与作品集，专注于深度学习、跨平台桌面应用与 Web 全栈开发。">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('resume-theme');
+        var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+        if (saved === 'light' || (!saved && prefersLight)) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      } catch (e) {
+        // ignore
+      }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到主要内容</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="回到首页">
+        <span class="logo-mark">刘</span>
+        <span class="logo-text">TAORUI</span>
+      </a>
+      <nav class="main-nav" role="navigation" aria-label="主导航">
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#about">关于</a></li>
+          <li><a href="#education">教育</a></li>
+          <li><a href="#projects">项目</a></li>
+          <li><a href="#skills">技能</a></li>
+          <li><a href="#contact" class="nav-cta">联系</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" aria-label="切换到浅色主题" type="button">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="打开菜单">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main">
+    <section id="top" class="hero section">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="hero-kicker">算法与软件开发 · 2026 届</p>
+          <h1 class="hero-title">刘焘瑞</h1>
+          <p class="hero-lead">中国石油大学（华东）信息与计算科学专业。GPA 82.98/100，专业排名 16/56。具备从算法研究到工程交付的完整实践能力，工作方向覆盖深度学习、跨平台桌面应用与 Web 全栈开发。</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">查看项目</a>
+            <a href="assets/resume.pdf" class="btn btn-ghost" download>下载 PDF</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <svg class="hero-illustration hero-clock" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="140" cy="140" r="132" fill="var(--clock-case)" stroke="var(--border-color)" stroke-width="2"/>
+            <g stroke="var(--clock-marker)" stroke-width="2" stroke-linecap="round">
+              <line x1="140" y1="22" x2="140" y2="34" transform="rotate(0 140 140)"/>
+              <line x1="140" y1="22" x2="140" y2="34" transform="rotate(30 140 140)"/>
+              <line x1="140" y1="22" x2="140" y2="34" transform="rotate(60 140 140)"/>
+              <line x1="140" y1="22" x2="140" y2="34" transform="rotate(90 140 140)"/>
+              <line x1="140" y1="22" x2="140" y2="34" transform="rotate(120 140 140)"/>
+              <line x1="140" y1="22" x2="140" y2="34" transform="rotate(150 140 140)"/>
+              <line x1="140" y1="22" x2="140" y2="34" transform="rotate(180 140 140)"/>
+              <line x1="140" y1="22" x2="140" y2="34" transform="rotate(210 140 140)"/>
+              <line x1="140" y1="22" x2="140" y2="34" transform="rotate(240 140 140)"/>
+              <line x1="140" y1="22" x2="140" y2="34" transform="rotate(270 140 140)"/>
+              <line x1="140" y1="22" x2="140" y2="34" transform="rotate(300 140 140)"/>
+              <line x1="140" y1="22" x2="140" y2="34" transform="rotate(330 140 140)"/>
+            </g>
+            <circle cx="140" cy="140" r="100" fill="none" stroke="var(--clock-track)" stroke-width="22"/>
+            <g id="hour-dot-group">
+              <circle cx="140" cy="40" r="9" fill="var(--accent-primary)"/>
+            </g>
+            <circle cx="140" cy="140" r="74" fill="none" stroke="var(--clock-track)" stroke-width="22"/>
+            <g id="minute-dot-group">
+              <circle cx="140" cy="66" r="9" fill="var(--accent-warm)"/>
+            </g>
+            <circle cx="140" cy="140" r="52" fill="none" stroke="var(--clock-track)" stroke-width="16"/>
+            <g id="second-dot-group">
+              <circle cx="140" cy="88" r="6" fill="var(--accent-secondary)"/>
+            </g>
+            <circle cx="140" cy="140" r="42" fill="var(--clock-center)"/>
+            <text id="clock-digital" x="140" y="148" text-anchor="middle" fill="var(--clock-text)" font-size="19" font-family="var(--font-mono)" font-weight="500">00:00:00</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index">01</span>
+          <h2 class="section-title">关于</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>中国石油大学（华东）信息与计算科学专业本科，毕业论文研究方向为基于知识图谱与强化学习的跨域推荐系统。系统学习数据结构与算法、大数据分析与挖掘、微分方程数值解等课程，具备扎实的数学与计算机基础。</p>
+            <p>习惯将算法研究与工程实践并行推进：复写过 IEEE TNNLS 顶会模型，微调过 BERT 做中文情感分析，也独立开发过 PySide6 跨平台桌面应用与 Flask + Three.js 三维可视化系统。相信清晰的工程架构与可复现的实验设计，是解决实际问题的根本方法。</p>
+          </div>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <span class="highlight-value">82.98</span>
+              <span class="highlight-label">GPA</span>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-value">16/56</span>
+              <span class="highlight-label">专业排名</span>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-value">10</span>
+              <span class="highlight-label">项目</span>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-value">Top 4.2%</span>
+              <span class="highlight-label">CTF 排名</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="experience section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index">02</span>
+          <h2 class="section-title">教育背景</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <time datetime="2022-09">2022.09</time> — <time datetime="2026-06">2026.06</time>
+            </div>
+            <div class="timeline-body">
+              <h3 class="timeline-role">中国石油大学（华东）</h3>
+              <p class="timeline-org">信息与计算科学 · 本科</p>
+              <ul class="timeline-duties">
+                <li><strong>GPA 82.98/100</strong>，专业排名 16/56</li>
+                <li>核心课程：数据结构与算法（91）、大数据分析与挖掘（94）、信息论基础（94）、微分方程数值解（91）</li>
+                <li>毕业论文研究方向：基于知识图谱与强化学习的跨域推荐系统——复现并改进 KR-CDR 模型（IEEE TNNLS 2025），提出残差连接与 Dropout 正则化改进方案，将 NDCG@10 从 0.3218 提升至 0.4438</li>
+                <li>荣誉：校级奖学金、中国大学生数学建模竞赛省级三等奖、中国大学生计算机设计大赛省级三等奖</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <time datetime="2024-10">竞赛</time>
+            </div>
+            <div class="timeline-body">
+              <h3 class="timeline-role">竞赛与活动</h3>
+              <p class="timeline-org">队长 / 编程手 / 个人参赛</p>
+              <ul class="timeline-duties">
+                <li><strong>全国大学生数学建模竞赛</strong>：队长兼编程手，72 小时内主导建模、编程与论文撰写，获省级三等奖。</li>
+                <li><strong>中国大学生计算机设计大赛</strong>：队长，负责选题设计与核心算法实现，获省级三等奖。</li>
+                <li><strong>校级 CTF 夺旗战</strong>：120 名参赛者中排名前 5（Top 4.2%），涉及 SQL 注入、密码破解、流量分析及 Linux 命令行工具运用。</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index">03</span>
+          <h2 class="section-title">项目</h2>
+        </div>
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">DSHwork · DeepSeek Harness 桌面客户端</h3>
+              <div class="project-links">
+                <a href="https://github.com/TaoruiLiu19/DSHwork" target="_blank" rel="noopener noreferrer" aria-label="查看源码">GitHub</a>
+              </div>
+            </div>
+            <p class="project-desc">为 DeepSeek Harness 大模型框架开发的跨平台桌面客户端，从原型设计到 Windows / macOS 双平台签名打包发布。</p>
+            <ul class="project-highlights">
+              <li>设计 UI / 业务逻辑 / DSH 通信三层隔离架构，通过 VersionAdapter 适配服务端多版本兼容</li>
+              <li>基于 HTTP + 双 WebSocket 流实现与后端的通信，支持重连管理与离线降级</li>
+              <li>实现 Work/Code 双模式、VSCode 风格文件树、会话内终端、文件更改追踪与一键还原</li>
+              <li>Windows（NSIS）与 macOS（Apple Silicon / Intel，已签名公证）双平台打包</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag tag-accent">PySide6</span>
+              <span class="tag">WebSocket</span>
+              <span class="tag">RESTful API</span>
+              <span class="tag">NSIS</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">跨域推荐系统 · 知识图谱 + 强化学习</h3>
+              <div class="project-links">
+                <a href="https://github.com/TaoruiLiu19/KR-CDR-Reproduction" target="_blank" rel="noopener noreferrer" aria-label="查看源码">GitHub</a>
+              </div>
+            </div>
+            <p class="project-desc">本科毕业论文工作。完整复现并改进 KR-CDR 模型（IEEE TNNLS 2025），利用强化学习自动推理跨域元路径，缓解重叠用户稀疏导致的推荐性能下降问题。</p>
+            <ul class="project-highlights">
+              <li>实现跨域知识图谱构建、TransE 嵌入预训练、Actor-Critic + Meta-Net 联合训练、束搜索路径推理与双层注意力聚合</li>
+              <li>在 Amazon Reviews 2018 三个领域对上进行实验，Ap-By 上 NDCG@10 与论文差距 ≤5.1%</li>
+              <li>提出残差连接与 Dropout 正则化改进，Lb-By 上 NDCG@10 从 0.3218 提升至 0.4438（+37.8%），与论文值差距缩小至 1.1%</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">DGL-KE</span>
+              <span class="tag tag-accent">强化学习</span>
+              <span class="tag">TransE</span>
+              <span class="tag">Actor-Critic</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">NovelCraft · AI 小说创作辅助工具</h3>
+              <div class="project-links">
+                <a href="https://github.com/TaoruiLiu19/novelcraft" target="_blank" rel="noopener noreferrer" aria-label="查看源码">GitHub</a>
+              </div>
+            </div>
+            <p class="project-desc">基于 DeepSeek V4-Flash 百万 token 上下文窗口的长篇小说创作辅助工具，解决 AI 续写时遗忘前文的工程问题。</p>
+            <ul class="project-highlights">
+              <li>按创作流程拆分为独立模块：大纲生成、人物小传与关系图、润色扩写、角色对白、全书记忆引擎</li>
+              <li>利用 100 万 token 上下文一次性加载约 90 万字全文，保证人物一致性与伏笔连贯</li>
+              <li>基于 Streamlit 构建交互界面，依赖极简，pip 安装即可运行</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Streamlit</span>
+              <span class="tag tag-accent">DeepSeek API</span>
+              <span class="tag">RAG</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">CalendarDesk · 桌面日历挂件</h3>
+              <div class="project-links">
+                <a href="https://github.com/TaoruiLiu19/CalendarDesk" target="_blank" rel="noopener noreferrer" aria-label="查看源码">GitHub</a>
+              </div>
+            </div>
+            <p class="project-desc">基于 Python + PySide6 的桌面日历工具，支持农历显示、法定节假日标记、主题切换与备忘录定时提醒。</p>
+            <ul class="project-highlights">
+              <li>实现 1900–2100 年农历转换（含闰月与生肖），覆盖 200 年日期推算</li>
+              <li>节假日数据自动下载并缓存，断网可用；休息日标红，调休日标记「班」</li>
+              <li>系统托盘驻留、单实例保护、无边框窗口拖动与边缘缩放</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag tag-accent">PySide6</span>
+              <span class="tag">QSettings</span>
+              <span class="tag">系统托盘</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-header section-header-secondary">
+          <h2 class="section-title">其他项目</h2>
+        </div>
+        <div class="project-list project-list-compact">
+          <article class="project-card project-card-compact">
+            <div class="project-header">
+              <h3 class="project-title">3D 地球经纬度交互系统</h3>
+              <div class="project-links">
+                <a href="#" aria-label="查看项目">Demo</a>
+              </div>
+            </div>
+            <p class="project-desc">Flask + Three.js 构建的轻量级 3D 地球仪，支持旋转、点击获取经纬度与 20 个国家首都坐标查询。</p>
+            <div class="project-tags">
+              <span class="tag">Flask</span>
+              <span class="tag">Three.js</span>
+              <span class="tag">RESTful API</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card-compact">
+            <div class="project-header">
+              <h3 class="project-title">中文情感分析 · BERT vs RNN</h3>
+              <div class="project-links">
+                <a href="https://github.com/TaoruiLiu19/chinese-sentiment-analysis-bert-vs-rnn" target="_blank" rel="noopener noreferrer" aria-label="查看源码">GitHub</a>
+              </div>
+            </div>
+            <p class="project-desc">系统对比 LSTM/GRU 与 BERT 在中文情感分类任务上的性能与效率，BERT 准确率 90.6%，RNN 推理速度为 BERT 的 7.6 倍。</p>
+            <div class="project-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">BERT</span>
+              <span class="tag">LSTM</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card-compact">
+            <div class="project-header">
+              <h3 class="project-title">空气质量时序预测</h3>
+              <div class="project-links">
+                <a href="#" aria-label="查看项目">Demo</a>
+              </div>
+            </div>
+            <p class="project-desc">基于 LSTM / RNN 对 UCI 空气质量数据集进行多污染物浓度预测，实现滑动窗口与早停策略的完整时序预测流水线。</p>
+            <div class="project-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">LSTM</span>
+              <span class="tag">时序预测</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card-compact">
+            <div class="project-header">
+              <h3 class="project-title">水质图像鉴定系统</h3>
+              <div class="project-links">
+                <a href="#" aria-label="查看项目">Demo</a>
+              </div>
+            </div>
+            <p class="project-desc">面向小样本水质图像分类，对比颜色矩特征工程与 CNN 自动特征提取，CNN 准确率从 86.4% 提升至 91.6%。</p>
+            <div class="project-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">CNN</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card-compact">
+            <div class="project-header">
+              <h3 class="project-title">物联网环境监测系统</h3>
+              <div class="project-links">
+                <a href="#" aria-label="查看项目">Demo</a>
+              </div>
+            </div>
+            <p class="project-desc">团队项目，负责 Django 后端 RESTful API 设计与单片机串口通信模块开发，实现传感器数据采集与远程控制。</p>
+            <div class="project-tags">
+              <span class="tag">Django</span>
+              <span class="tag">C</span>
+              <span class="tag">ESP8266</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-index">04</span>
+          <h2 class="section-title">技能栈</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3 class="skill-group-title">编程语言</h3>
+            <div class="skill-tags">
+              <span class="tag tag-accent">Python</span>
+              <span class="tag">C/C++</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">深度学习与数据</h3>
+            <div class="skill-tags">
+              <span class="tag tag-accent">PyTorch</span>
+              <span class="tag">Transformers</span>
+              <span class="tag">DGL-KE</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">scikit-learn</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">开发与工程</h3>
+            <div class="skill-tags">
+              <span class="tag">PySide6</span>
+              <span class="tag">Flask</span>
+              <span class="tag">Django</span>
+              <span class="tag">Three.js</span>
+              <span class="tag">Git</span>
+              <span class="tag tag-accent">Linux</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">核心方向</h3>
+            <div class="skill-tags">
+              <span class="tag">算法设计</span>
+              <span class="tag">CNN / LSTM / BERT</span>
+              <span class="tag">知识图谱</span>
+              <span class="tag">强化学习</span>
+              <span class="tag">跨平台桌面</span>
+              <span class="tag">RESTful API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container contact-inner">
+        <div class="section-header contact-header">
+          <span class="section-index">05</span>
+          <h2 class="section-title">联系</h2>
+        </div>
+        <p class="contact-lead">对项目感兴趣，或想聊聊算法、桌面应用与 Web 开发，欢迎联系。</p>
+        <div class="contact-actions">
+          <a href="mailto:liu_taorui@foxmail.com" class="btn btn-primary btn-lg">liu_taorui@foxmail.com</a>
+          <div class="contact-links">
+            <a href="https://github.com/TaoruiLiu19" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="tel:18087821083" class="contact-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              18087821083
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> 刘焘瑞</p>
+      <p class="footer-credit">GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
