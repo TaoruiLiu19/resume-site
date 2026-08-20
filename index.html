@@ -62,7 +62,7 @@
             <h1 class="hero-title">刘焘瑞</h1>
             <img class="hero-portrait" src="assets/avatar.png" alt="刘焘瑞" loading="eager">
           </div>
-          <p class="hero-lead">中国石油大学（华东）信息与计算科学专业。GPA 82.98/100，专业排名 16/56。具备从算法研究到工程交付的完整实践能力，工作方向覆盖深度学习、跨平台桌面应用与 Web 全栈开发。</p>
+          <p class="hero-lead">中国石油大学（华东）信息与计算科学专业。GPA 83.26/100，专业排名 15/55。具备从算法研究到工程交付的完整实践能力，工作方向覆盖深度学习、跨平台桌面应用与 Web 全栈开发。</p>
           <div class="hero-actions">
             <a href="#projects" class="btn btn-primary">查看项目</a>
             <a href="assets/resume.pdf" class="btn btn-ghost" download>下载 PDF</a>
@@ -117,20 +117,20 @@
           </div>
           <div class="about-highlights">
             <div class="highlight-card">
-              <span class="highlight-value">82.98</span>
+              <span class="highlight-value">83.26</span>
               <span class="highlight-label">GPA</span>
             </div>
             <div class="highlight-card">
-              <span class="highlight-value">16/56</span>
+              <span class="highlight-value">15/55</span>
               <span class="highlight-label">专业排名</span>
             </div>
             <div class="highlight-card">
-              <span class="highlight-value">10</span>
+              <span class="highlight-value">11</span>
               <span class="highlight-label">项目</span>
             </div>
             <div class="highlight-card">
-              <span class="highlight-value">Top 4.2%</span>
-              <span class="highlight-label">CTF 排名</span>
+              <span class="highlight-value">2项</span>
+              <span class="highlight-label">省级奖项</span>
             </div>
           </div>
         </div>
@@ -152,8 +152,8 @@
               <h3 class="timeline-role">中国石油大学（华东）</h3>
               <p class="timeline-org">信息与计算科学 · 本科</p>
               <ul class="timeline-duties">
-                <li><strong>GPA 82.98/100</strong>，专业排名 16/56</li>
-                <li>核心课程：数据结构与算法（91）、大数据分析与挖掘（94）、信息论基础（94）、微分方程数值解（91）</li>
+                <li><strong>GPA 83.26/100</strong>，专业排名 15/55</li>
+                <li>核心课程：数据结构与算法（91）、大数据分析与挖掘（94）、信息论基础（97）、微分方程数值解（91）、操作系统（90）</li>
                 <li>毕业论文研究方向：基于知识图谱与强化学习的跨域推荐系统——复现并改进 KR-CDR 模型（IEEE TNNLS 2025），提出残差连接与 Dropout 正则化改进方案，将 NDCG@10 从 0.3218 提升至 0.4438</li>
                 <li>荣誉：校级奖学金、中国大学生数学建模竞赛省级三等奖、中国大学生计算机设计大赛省级三等奖</li>
               </ul>
@@ -210,9 +210,8 @@
           <article class="project-card">
             <div class="project-header">
               <h3 class="project-title">跨域推荐系统 · 知识图谱 + 强化学习</h3>
-              <div class="project-links">
-                <a href="https://github.com/TaoruiLiu19/KR-CDR-Reproduction" target="_blank" rel="noopener noreferrer" aria-label="查看源码">GitHub</a>
-              </div>
+              <!-- 已删除 GitHub 链接，因为源码未公开 -->
+              <div class="project-links"></div>
             </div>
             <p class="project-desc">本科毕业论文工作。完整复现并改进 KR-CDR 模型（IEEE TNNLS 2025），利用强化学习自动推理跨域元路径，缓解重叠用户稀疏导致的推荐性能下降问题。</p>
             <ul class="project-highlights">
@@ -270,6 +269,33 @@
               <span class="tag">系统托盘</span>
             </div>
           </article>
+
+          <!-- ========== 新增：财商知识库项目 ========== -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">财商知识库 · 全栈知识管理平台</h3>
+              <div class="project-links">
+                <!-- 如有线上预览链接可放此处，目前留空 -->
+              </div>
+            </div>
+            <p class="project-desc">从零搭建的知识库网站，实现制度文件分类存储、后台管理及边缘托管部署。采用 Next.js + TypeScript 全栈开发，集成阿里云 PostgreSQL 与 OSS。</p>
+            <ul class="project-highlights">
+              <li>设计“边缘托管（EdgeOne Pages）+ 云数据库 + 对象存储”三层解耦架构，实现国内低延迟访问与实验阶段零成本运行</li>
+              <li>解决 Next.js + pnpm 构建环境下的多个兼容性难题（Turbopack 模块 hash、依赖隔离冲突），通过配置 `--webpack` 和 `serverExternalPackages` 保证生产构建稳定</li>
+              <li>实现管理员鉴权中间件保护写接口，使用环境变量统一管理数据库连接与存储密钥</li>
+              <li>编写完整搭建文档及踩坑指南，沉淀可复用的工程化经验</li>
+            </ul>
+            <div class="project-tags">
+              <span class="tag tag-accent">Next.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">OSS</span>
+              <span class="tag">EdgeOne Pages</span>
+              <span class="tag">pnpm</span>
+            </div>
+          </article>
+          <!-- ========== 新增结束 ========== -->
+
         </div>
 
         <div class="section-header section-header-secondary">
